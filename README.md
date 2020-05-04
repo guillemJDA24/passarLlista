@@ -1,10 +1,10 @@
-# Crear jeràrquia de directoris i arxius donat un CSV (curs 2016/2017)
+# Passar llista
 
 ![](https://cdn.memegenerator.es/imagenes/memes/full/18/1/18012436.jpg)
 
 L'institut us ha contractat perquè tracteu les dades de matrícula del curs.
 
-Per això us passen un fitxer amb les dades de l'alumnat matriculat, està en format [CSV](https://ca.wikipedia.org/wiki/CSV).
+Per això us passen un fitxer amb les dades de l'[alumnat matriculat](https://github.com/sergiperez/passarLlista/blob/master/matricula/alumnat.csv), està en format [CSV](https://ca.wikipedia.org/wiki/CSV).
 
 
 ## Exercici 1 - Configuració. 
