@@ -58,6 +58,7 @@ No es podrà accedir en aquesta llista si en la configuració no s'ha indicat:
 - quin és el directori on està l'arxiu de matricula.
 - on es guarden els arxius d'assistència.
 - on es guarda el registre de la llista.
+- si no s'ha creat els arxius de grups (haver fet opció 2 abans).
 
 Per passar llista haureu de seguir aquest fluxe:
 
@@ -84,7 +85,12 @@ Muñoz Carbó. Miguel - 1
 
 ## Exercici 4 - Consultar assistència
 
-En aquesta opció el professorat vol consultar l'assistència d'un dia. Per fer-ho mostrareu tots els arxius registrats de passar llista, el professorat tria un nom i se li mostra l'assistència d'aquell dia.         
+En aquesta opció el professorat vol consultar l'assistència d'un dia. Per fer-ho mostrareu tots els arxius registrats de passar llista, el professorat tria un nom i se li mostra l'assistència d'aquell dia.
+Per mostrar els arxius d'un directori ho podeu fer amb:
+```python3=         
+fitxers = os.listdir('html/')
+for nomFitxer in fitxers:
+```
 
 Heu de mostrar nom a nom de l'alumne i posar Falta! en el cas que s'hagi registrat un 0.
 
