@@ -33,10 +33,17 @@ while (opcioMenu !=5):
     for i in fitxer:
       alumne=i.split(',')
       if (alumne[1] ==11) and (alumne[1]==12):
-        eso1.write(alumne[0])
+        eso1.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] ==13):
-        eso2.write(i)
-    
+        eso2.write(alumne[0] + alumne[2] + alumne[5]  )
+    elif (alumne[1] ==14):
+        eso3.write(alumne[0] + alumne[2] + alumne[5]  )
+    elif (alumne[1] ==15):
+        eso4.write(alumne[0] + alumne[2] + alumne[5]  )
+    elif (alumne[1] ==16):
+        bat1.write(alumne[0] + alumne[2] + alumne[5]  )
+    elif (alumne[1] ==17) and (alumne[1]==18):
+        bat2.write(alumne[0] + alumne[2] + alumne[5]  )
     #Obrir tots elsarxius per escriptura
     #Bucle sobre arxiu matricula
       #Agafar camps separats per ","
