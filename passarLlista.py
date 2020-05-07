@@ -39,22 +39,26 @@ while (opcioMenu !=5):
       ##TODO Pot una laumne tenir dos edats a la vegada?
       print(alumne[1])
       if (alumne[1] == '11'):
-        print(alumne)
         eso1.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] =='12') :
         eso1.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] =='13'):
         eso2.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] =='14'):
-          eso3.write(alumne[0] + alumne[2] + alumne[5]  )
+        eso3.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] =='15'):
-          eso4.write(alumne[0] + alumne[2] + alumne[5]  )
+        eso4.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] =='16'):
-          bat1.write(alumne[0] + alumne[2] + alumne[5]  )
+        bat1.write(alumne[0] + alumne[2] + alumne[5]  )
       ##TODO Pot una laumne tenir dos edats a la vegada?  
       elif (alumne[1] =='17') and (alumne[1]==18):
-          bat2.write(alumne[0] + alumne[2] + alumne[5]  )
+        bat2.write(alumne[0] + alumne[2] + alumne[5]  )
       eso1.close()
+      eso2.close()
+      eso3.close()
+      eso4.close()
+      bat1.close()
+      bat2.close()
 
   if (opcioMenu == 3):
     eso1 = open(directoriGrups +"/eso1.csv","r")
