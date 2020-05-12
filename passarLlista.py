@@ -37,7 +37,6 @@ while (opcioMenu !=5):
     for i in fitxer:
       alumne=i.split(',')
       ##TODO Pot una laumne tenir dos edats a la vegada?
-      print(alumne[1])
       if (alumne[1] == '11'):
         eso1.write(alumne[0] + alumne[2] + alumne[5]  )
       elif (alumne[1] =='12') :
@@ -51,14 +50,16 @@ while (opcioMenu !=5):
       elif (alumne[1] =='16'):
         bat1.write(alumne[0] + alumne[2] + alumne[5]  )
       ##TODO Pot una laumne tenir dos edats a la vegada?  
-      elif (alumne[1] =='17') and (alumne[1]==18):
+      elif (alumne[1] =='17'):
         bat2.write(alumne[0] + alumne[2] + alumne[5]  )
-      eso1.close()
-      eso2.close()
-      eso3.close()
-      eso4.close()
-      bat1.close()
-      bat2.close()
+      elif (alumne[1]=='18'):
+        bat2.write(alumne[0] + alumne[2] + alumne[5]  )
+    eso1.close()
+    eso2.close()
+    eso3.close()
+    eso4.close()
+    bat1.close()
+    bat2.close()
 
   if (opcioMenu == 3):
     eso1 = open(directoriGrups +"/eso1.csv","r")
@@ -72,16 +73,15 @@ while (opcioMenu !=5):
     if (curs =='eso1'):
       eso1asis=open(directoriAssistencia+'/eso1_'+str(dia)+'.csv','w')
       for n in eso1:
-        alumne = eso1.readline()
+        alumne = eso1.readline().split()
         print(alumne[0])
         asis=input('esta alumne 1=si 0=no')
-        while (asis == '1') or (asis == '0'):
-          if asis == '1':
-            eso1asis.write(alumne[0]+'- 1')
-          elif (asis == '0'):
-            eso1asis.write(alumne[0]+'- 0')
-          else:
-            asis=input('esta lalumne 1=si 0=no')
+        if asis == '1':
+          eso1asis.write(alumne[0]+'- 1')
+        elif (asis == '0'):
+          eso1asis.write(alumne[0]+'- 0')
+      eso1asis.close()   
+        
 
           
            
